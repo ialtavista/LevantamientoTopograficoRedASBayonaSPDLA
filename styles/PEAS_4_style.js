@@ -23,8 +23,8 @@ var style_PEAS_4 = function(feature, resolution){
         labelText = String(feature.get("NOMBRE"));
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(150,150,150,1.0)'})}),
+        image: new ol.style.RegularShape({radius: 8.8 + size, points: 4,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(50,87,128,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(72,123,182,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)

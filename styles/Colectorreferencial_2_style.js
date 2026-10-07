@@ -19,11 +19,11 @@ var style_Colectorreferencial_2 = function(feature, resolution){
     var overflow = false;
     var repeat = 0;
     var placement = 'line';
-    if ("" !== null) {
-        labelText = String("");
+    if (feature.get("IDENTIFICA") !== null) {
+        labelText = String(feature.get("IDENTIFICA"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(150,150,150,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 0.988}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,161,245,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.6599999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)

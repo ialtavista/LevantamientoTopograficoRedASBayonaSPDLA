@@ -23,8 +23,8 @@ var style_Cmarareferencial_3 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(150,150,150,1.0)'})}),
+        image: new ol.style.Circle({radius: 6.0 + size,
+            displacement: [0, 0],  fill: new ol.style.Fill({color: 'rgba(0,161,245,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)

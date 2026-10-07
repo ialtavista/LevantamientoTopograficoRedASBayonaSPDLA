@@ -23,7 +23,7 @@ var style_Flujoreferencial_1 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(150,150,150,1.0)'}),
+        fill: new ol.style.Fill({color: 'rgba(0,161,245,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
